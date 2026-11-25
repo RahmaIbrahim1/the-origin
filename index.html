@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#030202">
+  <title>The Origin</title>
+  <meta name="description" content="A journey from a single seed into a world of its own.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cellipse cx='16' cy='16' rx='10' ry='14' fill='%23c27a45' transform='rotate(24 16 16)'/%3E%3Cpath d='M20 4C10 11 22 20 12 28' fill='none' stroke='%23140d09' stroke-width='2.4'/%3E%3C/svg%3E">
+</head>
+<body class="is-loading">
+  <canvas id="stage" aria-hidden="true"></canvas>
+
+  <main id="film">
+    <h1 class="sr">The Origin. A journey from a single seed into a world of its own.</h1>
+
+    <section class="act act-1">
+      <p class="line l1">Everything begins</p>
+      <p class="line l2">with a single seed.</p>
+    </section>
+
+    <!-- Scene 02's title stands inside the 3D world; this is its accessible text. -->
+    <p class="sr">A world hidden in plain sight.</p>
+
+    <section class="act act-3">
+      <p class="line l1">It takes heat</p>
+      <p class="line l2">to become</p>
+      <p class="line l3">something else.</p>
+    </section>
+
+    <section class="act act-4">
+      <p class="line l1">Break it down.</p>
+      <p class="line l2">Find what remains.</p>
+    </section>
+
+    <section class="act act-5">
+      <p class="line l1">Every particle</p>
+      <p class="line l2">has a purpose.</p>
+    </section>
+
+    <section class="act act-6">
+      <div class="final-head">
+        <p class="line l1">From a world</p>
+        <p class="line l2">within.</p>
+        <p class="line l3">To your world.</p>
+      </div>
+      <div class="product">
+        <div class="product-front">
+          <h2><span class="brand">The Origin</span> <span class="pname">Terra Prima</span></h2>
+          <p class="meta">Single-origin whole bean<br>Guji, Ethiopia, 2,100 m</p>
+          <p class="notes">Black fig, raw cacao, burnt honey</p>
+          <p class="desc">Natural-process heirloom coffee, dried slowly and roasted to the moment it opens.</p>
+        </div>
+        <div class="product-back" hidden>
+          <h2><span class="brand">Terra Prima</span> <span class="pname">How to brew</span></h2>
+          <p class="meta">18 g coffee, 290 g water at 94 °C</p>
+          <p class="notes">Bloom 40 seconds. Finish by 3:10.</p>
+          <p class="desc">Grind medium. Fig arrives first, then cacao. The honey stays.</p>
+        </div>
+        <div class="cta">
+          <button type="button" class="btn" id="discover" aria-expanded="false">Discover the coffee</button>
+          <a class="btn btn-solid" id="shop" href="#shop">Shop now</a>
+        </div>
+        <p class="shop-note" id="shop-note" role="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="ui">
+    <nav class="chapters" aria-label="Scenes"></nav>
+    <p class="where" aria-hidden="true"><span class="n">01</span><span class="name">The Seed</span></p>
+    <p class="cue" aria-hidden="true">Scroll<i></i></p>
+    <button type="button" class="sound" aria-pressed="false"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="lbl">Sound off</span></button>
+  </div>
+
+  <div class="loader" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Loading the film">
+    <p class="mark">The Origin</p>
+    <div class="track"><i></i></div>
+    <p class="pct">0</p>
+  </div>
+  <div class="fallback" hidden><p class="mark">The Origin</p><p>This film needs WebGL, and it could not start here. Turn on hardware acceleration or open it in another browser.</p></div>
+
+  <div id="scroll" aria-hidden="true"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
